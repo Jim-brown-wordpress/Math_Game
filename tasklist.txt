@@ -1,0 +1,4 @@
+tuesday: Register and Login Page with google authentication.
+wendesday: create room by Socket.io
+thursday: play game by Socket.io
+Friday: Check and Test and deploy
