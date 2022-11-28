@@ -4,6 +4,7 @@ const cors = require('cors');
 const userRoutes = require('./routes/users');
 const {Server} = require('socket.io');
 const http = require('http');
+const path = require('path')
 
 
 
@@ -44,9 +45,9 @@ app.use(userRoutes);
 
 
 if(process.env.MODE_ENV === "production"){
-    app.use(express.static(path.join(__dirname , "frontend/build")));
+    app.use(express.static(path.resolve(__dirname  , "../frontend/build")));
     app.get('*' , (req , res) =>{
-        res.sendFile(path.join(__dirname , "frontend/build" , "index.html"));
+        res.sendFile(path.join(__dirname , "../frontend/build" , "index.html"));
     });
 }
 
