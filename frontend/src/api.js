@@ -1,4 +1,4 @@
-import socketIOClient from 'socket.io-client';
+import { io } from 'socket.io-client';
 const PORT = 8080;
-const socket = socketIOClient(`http://localhost:${PORT}`);
+const socket = io();
 export default socket;
