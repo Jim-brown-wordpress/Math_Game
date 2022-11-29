@@ -6,7 +6,7 @@
   "scripts": {
     "db": "start mongod --dbpath ./db",
     "server": "nodemon app.js",
-    "dev":" concurrently \"npm run db\" \"npm run server\" "
+    "dev":" concurrently \"npm run db\" \"npm run server\""
   },
   "keywords": [],
   "author": "",
